@@ -2,28 +2,3 @@
     Created on : 19-Jan-2015, 22:42:45
     Author     : Stephen
 */
-header
-{
-   text-align: center;  
-   
-}
-main, header, footer
-{
-   margin: 0 auto;
-   width:800px;
-   max-width: 95%;
-   background-color: gold;
-   padding:.1%;
-}
-
-#jsprogc
-{   
-   padding:1%;
-   background-color: silver;
-   
-}
-
-footer
-{    
-   text-align: center;     
-}

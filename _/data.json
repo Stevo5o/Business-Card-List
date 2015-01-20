@@ -1,0 +1,28 @@
+{
+   "users": [
+      {
+         "name": "Stephen O'Connor",
+         "username": "Stevo",
+         "jobTitle": "Web Developer",
+         "emailAdd": "stevo.joc@gmail.com",
+         "companyName": "Microsoft",
+         "phoneNo": "0833715818"
+      },   
+      {
+         "name": "Barry Keegan",
+         "username": "Bar",
+         "jobTitle": "Network Administor",
+         "emailAdd": "barry2000@gmail.com",
+         "companyName": "Google",
+         "phoneNo": "0861234567"
+      },   
+      {
+         "name": "Darragh Mason",
+         "username": "Dar",
+         "jobTitle": "3d Artist",
+         "emailAdd": "dar@dotsinmasion.ie",
+         "companyName": "freelance",
+         "phoneNo": "018956123"
+      }   
+   ]
+}
