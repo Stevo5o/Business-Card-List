@@ -47,7 +47,7 @@ nav ul li{
    font-size: 100%;
    margin-bottom: 6px;
    letter-spacing: 3px;  
-   margin: 0px 45px 0;
+   margin: 4px 45px 0;
    display: inline-block;    
 }
 footer
@@ -115,6 +115,6 @@ img
 header
 {
    text-align: center; 
-   background: rgba(230,237,242,0.5);
+   border-bottom: 1px solid #475B62;
    
 }
