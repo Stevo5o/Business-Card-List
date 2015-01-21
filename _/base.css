@@ -52,6 +52,7 @@ nav ul li{
    margin-bottom: 6px;
    letter-spacing: 3px;  
    margin: 0px 45px 0;
+   display: inline-block;    
 }
 footer
 {    
@@ -107,4 +108,10 @@ ul li
   color: #FFF;
   background: #CB4B19;
   text-decoration: none; 
+}
+
+img
+{
+   float:right;
+   margin: 1.5% 6% 0px 0%;
 }
