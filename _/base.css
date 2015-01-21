@@ -45,11 +45,11 @@ main,header,footer,nav
    background-color: #EAE3CB;
    padding:.1%;
 }
+
 nav ul li{
    list-style-type: none;
    font-size: 100%;
-   font-weight: bold;
-   
+   margin-bottom: 6px;   
 }
 footer
 {    
@@ -86,4 +86,9 @@ footer
      list-style-type: square;
      margin: 0px 60px 0;
      font-size: .85em;
+  }
+  
+  a
+  {
+     text-decoration: none;
   }
