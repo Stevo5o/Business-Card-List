@@ -2,9 +2,23 @@
     Created on : 19-Jan-2015, 22:42:45
     Author     : Stephen
 */
+/* unvisited link */
+a:link {
+    color: #A57706;
+}
 
+/* visited link */
+a:visited {
+    color: #738A05;
+}
+
+/* mouse over link */
 a:hover {
-    color: #C61C6F;
-    font-weight: bold;
+    color: #C61C6F;    
     text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #259286;
 }

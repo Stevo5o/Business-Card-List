@@ -83,7 +83,7 @@ footer
 
   ul li 
   {
-     list-style-type: square;
+     list-style-type: decimal;
      margin: 0px 60px 0;
      font-size: .85em;
   }
