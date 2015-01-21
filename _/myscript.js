@@ -13,10 +13,10 @@
          $.each( data, function ( key, val ) {
             for ( var i = 0; i < val.length; i++ ) {
                var user = val[i];
-               output += "<li><a href='#" + user.username + "'>" + user.username + "</a></li>";
+               output += "<li><a id='pop' href='#" + user.username + "'>" + user.username + "</a></li>";
             }
             $( 'ul#user_list' ).append( output );
-            $( 'a[href]' ).click( function () {
+            $( "a#pop[href]" ).click( function () {
                var myWindow = window.open("","", "width=400, height=200");
                myWindow.document.write("Username: ", user.name);
                myWindow.document.title = "Users";
