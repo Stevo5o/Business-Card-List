@@ -49,7 +49,9 @@ main,header,footer,nav
 nav ul li{
    list-style-type: none;
    font-size: 100%;
-   margin-bottom: 6px;   
+   margin-bottom: 6px;
+   letter-spacing: 3px;
+   
 }
 footer
 {    
@@ -90,5 +92,5 @@ footer
   
   a
   {
-     text-decoration: none;
-  }
+     text-decoration: none;     
+  }  

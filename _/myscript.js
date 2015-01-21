@@ -16,8 +16,11 @@
                output += "<li><a href='#" + user.username + "'>" + user.username + "</a></li>";
             }
             $( 'ul#user_list' ).append( output );
-            $( 'a[href]' ).click( function () {               
-                  console.log( user.name );               
+            $( 'a[href]' ).click( function () {
+               var myWindow = window.open("","", "width=400, height=200");
+               myWindow.document.write("Username: ", user.name);
+               myWindow.document.title = "Users";
+                  // alert( user.name );               
             } );
          } );
       }
