@@ -50,7 +50,8 @@ nav ul li{
    list-style-type: none;
    font-size: 100%;
    margin-bottom: 6px;
-   letter-spacing: 3px;   
+   letter-spacing: 3px;  
+   margin: 0px 45px 0;
 }
 footer
 {    
@@ -69,27 +70,41 @@ footer
   }
 
   p
-  {
-  	margin-bottom: .5em;
+  {  	
    padding:0 3%;
    font-size: .85em;
   }
  
   	.container
   	{
-  		width:100%;
-      
+  		width:100%;      
   	}
  
-
-  ul li 
+ul li 
   {
-     list-style-type: decimal;
-     margin: 0px 60px 0;
+     list-style-type: circle;
+     margin: 0px 33% 10px;
      font-size: .85em;
   }
   
-  a
+  ul a
   {
-     text-decoration: none;     
+     text-decoration: none; 
+     outline: none;
   }  
+.buttons {    
+    border: 1px solid #CB4B19;
+    border-radius: 4px 4px 4px 4px;
+    color: #CB4B19;
+    letter-spacing: 1px;
+    font-size: 75%;
+    margin: 3px;
+    padding: 4px 9px;
+    text-decoration: none; 
+}
+
+.buttons:hover {
+  color: #FFF;
+  background: #CB4B19;
+  text-decoration: none; 
+}

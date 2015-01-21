@@ -1,6 +1,7 @@
 {
    "users": [
       {
+         "id": "1",
          "name": "Stephen O'Connor",
          "username": "Stevo",
          "jobTitle": "Web Developer",
@@ -9,20 +10,49 @@
          "phoneNo": "0833715818"
       },   
       {
+         "id": "2",
          "name": "Barry Keegan",
-         "username": "Bar",
+         "username": "Barry",
          "jobTitle": "Network Administor",
          "emailAdd": "barry2000@gmail.com",
          "companyName": "Google",
          "phoneNo": "0861234567"
       },   
       {
+         "id": "3",
          "name": "Darragh Mason",
-         "username": "Dar",
+         "username": "Darragh",
          "jobTitle": "3d Artist",
          "emailAdd": "dar@dotsinmasion.ie",
-         "companyName": "freelance",
+         "companyName": "Freelance",
          "phoneNo": "018956123"
-      }   
+      },  
+      {
+         "id": "4",
+         "name": "Sean Murphy",
+         "username": "Seaneo",
+         "jobTitle": "Probation Officer",
+         "emailAdd": "seaneo@probatio.ie",
+         "companyName": "The Government",
+         "phoneNo": "0668956123"
+      },  
+      {
+         "id": "5",
+         "name": "Tom Barry",
+         "username": "Tom",
+         "jobTitle": "Freedom Fighter",
+         "emailAdd": "tom@irisharmy.ie",
+         "companyName": "The Irish Army",
+         "phoneNo": "0688646123"
+      },  
+      {
+         "id": "6",
+         "name": "John Tran",
+         "username": "Jonny",
+         "jobTitle": "Road Maintance Manager",
+         "emailAdd": "johnt@m50.ie",
+         "companyName": "M50",
+         "phoneNo": "014926123"
+      }  
    ]
 }

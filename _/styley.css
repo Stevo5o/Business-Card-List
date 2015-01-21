@@ -22,3 +22,38 @@ a:hover {
 a:active {
     color: #259286;
 }
+
+#user_list
+{
+   
+   height: 100%;
+   width:100%;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+            
+   margin: 20px 0px;
+            
+}
+#user_list li
+{
+   
+   font-size: .95em;
+    display: inline-block;    
+}
+
+#user_list li::before 
+{
+ content: '\007E\a0';
+}
+
+footer
+{
+   background: rgba(230,237,242,0.3);
+   
+}
+#buttons
+{
+   margin:1% 2.4%;
+}
+     

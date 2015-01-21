@@ -14,7 +14,7 @@
             for ( var i = 0; i < val.length; i++ ) {
                var user = val[i];
                console.log( val[i] );
-               output += "<li><a id='pop' href='#" + user.username + "'>" + user.username + "</a></li>";
+               output += "<li><a id='pop' href='#" + user.id + "'>" + user.username + "</a></li>";
             }
             $( 'ul#user_list' ).append( output );
             $( "a#pop[href]" ).click( function () {
@@ -23,10 +23,29 @@
                        "Job Title: ", user.jobTitle + "<br />" +
                        "Email Address: ", user.emailAdd );
                myWindow.document.title = "Users";
-               // alert( user.name );               
             } );
          } );
       }
    } );
+$(document).ready(function() {
+    $('.link-sort-list').click(function(e) {
+        var $sort = this;
+        var $list = $('#user_list');
+        var $listLi = $('li',$list);
+        $listLi.sort(function(a, b){
+            var keyA = $(a).text();
+            var keyB = $(b).text();
+            if($($sort).hasClass('asc')){
+                return (keyA > keyB) ? 1 : 0;
+            } else {
+                return (keyA < keyB) ? 1 : 0;
+            }
+        });
+        $.each($listLi, function(index, row){
+            $list.append(row);
+        });
+        e.preventDefault();
+    });
+});
 }() );
 
