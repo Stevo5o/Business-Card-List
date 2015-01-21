@@ -4,7 +4,7 @@
    var userIndex;
 
    $.ajax( {
-      url: 'data.json',
+      url: '_/data.json',
       dataType: 'json',
       type: 'get',
       cache: false,
