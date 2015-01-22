@@ -53,6 +53,33 @@
          "emailAdd": "johnt@m50.ie",
          "companyName": "M50",
          "phoneNo": "014926123"
+      },  
+      {
+         "id": "7",
+         "name": "James Gogerty",
+         "username": "Jimmy",
+         "jobTitle": "Software Developer",
+         "emailAdd": "jimmy@gmail.com",
+         "companyName": "Microsoft",
+         "phoneNo": "0688646123"
+      },  
+      {
+         "id": "8",
+         "name": "Patrick Douglas",
+         "username": "Paddy",
+         "jobTitle": "Analyst",
+         "emailAdd": "paddyd@gmail.com",
+         "companyName": "IBM",
+         "phoneNo": "014826753"
+      },  
+      {
+         "id": "9",
+         "name": "Paul Mullins",
+         "username": "Pauly",
+         "jobTitle": "Engineer",
+         "emailAdd": "pauly@gmail.com",
+         "companyName": "Google",
+         "phoneNo": "014926123"
       }  
    ]
 }

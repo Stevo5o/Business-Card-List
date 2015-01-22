@@ -31,7 +31,6 @@ a:active {
    -webkit-column-count: 3;
    -moz-column-count: 3;
    column-count: 3;
-
    margin: 20px 0px;
 
 }
@@ -41,12 +40,6 @@ a:active {
    font-size: .95em;
    display: inline-block;    
 }
-
-#user_list li::before 
-{
-   content: '\007E\a0';
-}
-
 #buttons
 {
    margin:1% 2.4%;

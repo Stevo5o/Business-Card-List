@@ -13,8 +13,8 @@
 
             for ( var i = 0; i < val.length; i++ ) {
                user = val[i];
-               console.log( user.id );
-               output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" + user.username + "</a></li>";
+               console.log( "User id:" + user.id + ". Name: " + user.name );
+               output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" +"&Tilde;"+ user.username + "</a></li>";
             }
             $( 'ul#user_list' ).append( output );
 
@@ -24,14 +24,16 @@
                if ( e.toElement.id === user.id )
                {
                   console.log( 'yes' );
-                  var myWindow = window.open( "", "", "width=400, height=200" );
-                  myWindow.document.write( "Username: ", user.name + "<br />" +
+                  var myYesWindow = window.open( "", "", "width=400, height=200" );
+                  myYesWindow.document.write( "Username: ", user.name + "<br />" +
                           "Job Title: ", user.jobTitle + "<br />" +
                           "Email Address: ", user.emailAdd );
-                  myWindow.document.title = "Users";
+                  myYesWindow.document.title = "Users";
                }
                else
                {
+                   var myNoWindow = window.open( "", "", "width=40, height=20" );
+                    myNoWindow.document.write( "No" );
                   console.log( 'no' );
                }
             }, false );
