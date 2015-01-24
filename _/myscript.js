@@ -8,36 +8,53 @@
       type: 'get',
       cache: false,
       success: function ( data ) {
+
+         var userId = [ ];
+
+         function createfunc( i ) {
+            return function () {
+               console.log( "User id: " + i );
+            };
+         }
+
+         console.log( userId );
          var output = "";
          $.each( data, function ( key, val ) {
-
+            console.log( data.users );
             for ( var i = 0; i < val.length; i++ ) {
-               user = val[i];
-               console.log( "User id:" + user.id + ". Name: " + user.name );
-               output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" +"&Tilde;"+ user.username + "</a></li>";
+               var user = val[i];
+               userId[i] = createfunc( user.id );
+
+               console.log( val[i] );
+               console.log( "user id:" + user.id + " " + user.name );
+               output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" + "&Tilde;" + user.username + "</a></li>";
+            }
+            console.log( val.length );
+            for ( var j = 0; j < val.length; j++ ) {
+               userId[j]();                        // and now let's run each one to see
             }
             $( 'ul#user_list' ).append( output );
 
-            document.getElementById( 'user_list' ).addEventListener( 'click', function ( e )
+            document.getElementById( user.id ).addEventListener( 'click', function ( e )
             {
                console.log( e.toElement );
                if ( e.toElement.id === user.id )
                {
                   console.log( 'yes' );
-                  var myYesWindow = window.open( "", "", "width=400, height=200" );
-                  myYesWindow.document.write( "Username: ", user.name + "<br />" +
+                  var myWindow = window.open( "", "", "width=400, height=200" );
+                  myWindow.document.write( "Username: ", user.name + "<br />" +
                           "Job Title: ", user.jobTitle + "<br />" +
                           "Email Address: ", user.emailAdd );
-                  myYesWindow.document.title = "Users";
+                  myWindow.document.title = "Users";
                }
                else
                {
-                   var myNoWindow = window.open( "", "", "width=40, height=20" );
-                    myNoWindow.document.write( "No" );
                   console.log( 'no' );
                }
             }, false );
          } );
+
+
       }
    } );
 
