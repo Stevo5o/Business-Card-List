@@ -17,15 +17,17 @@
                if ( e.toElement.id === data.users[i].id )
                {
                   console.log( data.users[i].name );
-                  var myWindow = window.open( "", "", "width=400, height=200" );
+                  var myWindow = window.open( "", "popup", "width=400, height=200,scrollbars=yes, menubar=no,resizable=no,directories=no,location=0" );
                   myWindow.document.write( "Name: ", data.users[i].name + "<br />" +
+                  "Company: ", data.users[i].companyName + "<br />" +
                           "Job Title: ", data.users[i].jobTitle + "<br />" +
                           "Email Address: ", data.users[i].emailAdd );
                   myWindow.document.title = "Users";
                }
             }
          }, false );
-
+         
+         // display links on page
          var output = "";
          $.each( data, function ( key, val ) {
 
@@ -37,8 +39,6 @@
 
             $( 'ul#user_list' ).append( output );
          } );
-
-
       }
    } );
 

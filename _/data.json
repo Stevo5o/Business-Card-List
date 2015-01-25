@@ -32,7 +32,7 @@
          "name": "Sean Murphy",
          "username": "Seaneo",
          "jobTitle": "Probation Officer",
-         "emailAdd": "seaneo@probatio.ie",
+         "emailAdd": "seaneo@prob.ie",
          "companyName": "The Government",
          "phoneNo": "0668956123"
       },  
@@ -68,7 +68,7 @@
          "name": "Patrick Douglas",
          "username": "Paddy",
          "jobTitle": "Analyst",
-         "emailAdd": "paddyd@gmail.com",
+         "emailAdd": "paddyd@ibm.com",
          "companyName": "IBM",
          "phoneNo": "014826753"
       },  
@@ -77,7 +77,7 @@
          "name": "Paul Mullins",
          "username": "Pauly",
          "jobTitle": "Engineer",
-         "emailAdd": "pauly@gmail.com",
+         "emailAdd": "pauly@google.com",
          "companyName": "Google",
          "phoneNo": "014926123"
       }  
