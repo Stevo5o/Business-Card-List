@@ -9,22 +9,28 @@
       type: 'get',
       cache: false,
       success: function ( data ) {
-         var userId = [ ];
 
-         function createfunc( i ) {
-            return function () {         
-               
-               console.log( "User id: " + i );
-            };
-         }
-
+         document.getElementById( 'user_list' ).addEventListener( 'click', function ( e )
+         {
+            for ( var i = 0; i < data.users.length; i++ )
+            {
+               if ( e.toElement.id === data.users[i].id )
+               {
+                  console.log( data.users[i].name );
+                  var myWindow = window.open( "", "", "width=400, height=200" );
+                  myWindow.document.write( "Name: ", data.users[i].name + "<br />" +
+                          "Job Title: ", data.users[i].jobTitle + "<br />" +
+                          "Email Address: ", data.users[i].emailAdd );
+                  myWindow.document.title = "Users";
+               }
+            }
+         }, false );
 
          var output = "";
          $.each( data, function ( key, val ) {
 
             for ( var i = 0; i < val.length; i++ ) {
                var user = val[i];
-               userId[i] = createfunc( user.name );
 
                output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" + "&Tilde;" + user.username + "</a></li>";
             }
@@ -32,10 +38,7 @@
             $( 'ul#user_list' ).append( output );
          } );
 
-         for ( var j = 0; j < data.users.length; j++ ) {             
-           
-            userId[j]();
-         }
+
       }
    } );
 
