@@ -9,14 +9,15 @@
       cache: false,
       success: function ( data ) {
 
-         document.getElementById( 'user_list' ).addEventListener( 'click', function ( e )
+         document.querySelector( '#user_list' ).addEventListener( 'click', function ( e )
          {
+
             for ( var i = 0; i < data.users.length; i++ )
+
             {
-               if ( e.toElement.id === data.users[i].id )
+               if ( e.target.id === data.users[i].id )
                {
                   swal( "Details", "Name: " + data.users[i].name + "\n Company: " + data.users[i].companyName + "\nJob title: " + data.users[i].jobTitle + "\n Email: " + data.users[i].emailAdd );
-
                }
             }
          }, false );
