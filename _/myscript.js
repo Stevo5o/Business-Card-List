@@ -1,6 +1,7 @@
 /* @ Stephen O'Connor */
 ( function () {
 
+   var usersIndex = 0;
    // jQuery AJAX call
    $.ajax( {
       url: '_/data.json',
@@ -8,53 +9,33 @@
       type: 'get',
       cache: false,
       success: function ( data ) {
-
          var userId = [ ];
 
          function createfunc( i ) {
-            return function () {
+            return function () {         
+               
                console.log( "User id: " + i );
             };
          }
 
-         console.log( userId );
+
          var output = "";
          $.each( data, function ( key, val ) {
-            console.log( data.users );
+
             for ( var i = 0; i < val.length; i++ ) {
                var user = val[i];
-               userId[i] = createfunc( user.id );
+               userId[i] = createfunc( user.name );
 
-               console.log( val[i] );
-               console.log( "user id:" + user.id + " " + user.name );
                output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" + "&Tilde;" + user.username + "</a></li>";
             }
-            console.log( val.length );
-            for ( var j = 0; j < val.length; j++ ) {
-               userId[j]();                        // and now let's run each one to see
-            }
-            $( 'ul#user_list' ).append( output );
 
-            document.getElementById( user.id ).addEventListener( 'click', function ( e )
-            {
-               console.log( e.toElement );
-               if ( e.toElement.id === user.id )
-               {
-                  console.log( 'yes' );
-                  var myWindow = window.open( "", "", "width=400, height=200" );
-                  myWindow.document.write( "Username: ", user.name + "<br />" +
-                          "Job Title: ", user.jobTitle + "<br />" +
-                          "Email Address: ", user.emailAdd );
-                  myWindow.document.title = "Users";
-               }
-               else
-               {
-                  console.log( 'no' );
-               }
-            }, false );
+            $( 'ul#user_list' ).append( output );
          } );
 
-
+         for ( var j = 0; j < data.users.length; j++ ) {             
+           
+            userId[j]();
+         }
       }
    } );
 
