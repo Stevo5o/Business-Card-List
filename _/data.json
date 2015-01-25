@@ -44,18 +44,9 @@
          "emailAdd": "tom@irisharmy.ie",
          "companyName": "The Irish Army",
          "phoneNo": "0688646123"
-      },  
+      },        
       {
          "id": "6",
-         "name": "John Tran",
-         "username": "Jonny",
-         "jobTitle": "Road Maintance Manager",
-         "emailAdd": "johnt@m50.ie",
-         "companyName": "M50",
-         "phoneNo": "014926123"
-      },  
-      {
-         "id": "7",
          "name": "James Gogerty",
          "username": "Jimmy",
          "jobTitle": "Software Developer",
@@ -64,7 +55,7 @@
          "phoneNo": "0688646123"
       },  
       {
-         "id": "8",
+         "id": "7",
          "name": "Patrick Douglas",
          "username": "Paddy",
          "jobTitle": "Analyst",
@@ -73,40 +64,31 @@
          "phoneNo": "014826753"
       },  
       {
-         "id": "9",
+         "id": "8",
          "name": "Paul Mullins",
          "username": "Pauly",
          "jobTitle": "Engineer",
          "emailAdd": "pauly@google.com",
          "companyName": "Google",
          "phoneNo": "014926123"
-      },  
+      },
+      {
+         "id": "9",
+         "name": "Ginni Rometty",
+         "username": "Ginni",
+         "jobTitle": "IBM, CEO",
+         "emailAdd": "ginni@ibm.com",
+         "companyName": "IBM",
+         "phoneNo": "8001596223"
+      },
       {
          "id": "10",
          "name": "Willem Mevius",
-         "username": "Willy",
+         "username": "Willem",
          "jobTitle": "Lead Software Developer",
-         "emailAdd": "willy@microsoft.com",
+         "emailAdd": "wmevius@microsoft.com",
          "companyName": "Microsoft",
-         "phoneNo": "0128646123"
-      },  
-      {
-         "id": "11",
-         "name": "Ginni Rometty",
-         "username": "Ginni",
-         "jobTitle": "IBM CEO",
-         "emailAdd": "Ginni@ibm.com",
-         "companyName": "IBM",
-         "phoneNo": "014826753"
-      },  
-      {
-         "id": "12",
-         "name": "Paul Irish",
-         "username": "Paul",
-         "jobTitle": "Front-end engineer & developer",
-         "emailAdd": "paulI@google.com",
-         "companyName": "Himself",
-         "phoneNo": "015926123"
-      }  
+         "phoneNo": "01596223"
+      }
    ]
 }
