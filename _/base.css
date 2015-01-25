@@ -26,6 +26,14 @@
   	background: #FDF6E3;
   	color: #475B62;
   }
+  
+  #pageContainer
+  {
+     width:800px;
+     margin: 0 auto;
+     background-color: #EAE3CB;
+     max-width: 99%;
+  }
 
   strong
   {
@@ -34,10 +42,8 @@
   
 
 main,header,footer,nav
-{
-   margin: 0 auto;
-   width:800px;
-   max-width: 95%;
+{   
+   
    background-color: #EAE3CB;
    padding:.1%;
 }
