@@ -1,6 +1,6 @@
 /* @ Stephen O'Connor */
 ( function () {
-   
+
    // jQuery AJAX call
    $.ajax( {
       url: '_/data.json',
@@ -15,13 +15,12 @@
             {
                if ( e.toElement.id === data.users[i].id )
                {
-                  
-                  swal("Details", "Name: " + data.users[i].name + "\n Company: " + data.users[i].companyName + "\nJob title: " + data.users[i].jobTitle + "\n Email: " + data.users[i].emailAdd );                 
-                 
+                  swal( "Details", "Name: " + data.users[i].name + "\n Company: " + data.users[i].companyName + "\nJob title: " + data.users[i].jobTitle + "\n Email: " + data.users[i].emailAdd );
+
                }
             }
          }, false );
-         
+
          // display links on page
          var output = "";
          $.each( data, function ( key, val ) {
