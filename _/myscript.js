@@ -1,7 +1,6 @@
 /* @ Stephen O'Connor */
 ( function () {
-
-   var usersIndex = 0;
+   
    // jQuery AJAX call
    $.ajax( {
       url: '_/data.json',
