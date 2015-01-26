@@ -16,7 +16,15 @@
             {
                if ( e.target.id === data.users[i].id )
                {
-                  swal( "Details", "Name: " + data.users[i].name + "\n Company: " + data.users[i].companyName + "\nJob title: " + data.users[i].jobTitle + "\n Email: " + data.users[i].emailAdd );
+                  swal(
+                          "Details", "Name: " +
+                          data.users[i].name +
+                          "\n Company: " +
+                          data.users[i].companyName +
+                          "\nJob title: " +
+                          data.users[i].jobTitle +
+                          "\n Email: " +
+                          data.users[i].emailAdd );
                }
             }
          }, false );
@@ -29,7 +37,14 @@
             for ( var i = 0; i < val.length; i++ )
             {
                var user = val[i];
-               output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" + "&Tilde;" + user.username + "</a></li>";
+               output +=
+                       "<li><a id='" +
+                       user.id +
+                       "' href='#" +
+                       user.id + "'>" +
+                       "&Tilde;" +
+                       user.username +
+                       "</a></li>";
             }
             $( 'ul#user_list' ).append( output );
          } );
