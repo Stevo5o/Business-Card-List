@@ -7,13 +7,12 @@
       dataType: 'json',
       type: 'get',
       cache: false,
-      success: function ( data ) {
-
+      success: function ( data )
+      {
+         // select and click for sweetalert pop-up
          document.querySelector( '#user_list' ).addEventListener( 'click', function ( e )
          {
-
             for ( var i = 0; i < data.users.length; i++ )
-
             {
                if ( e.target.id === data.users[i].id )
                {
@@ -24,14 +23,14 @@
 
          // display links on page
          var output = "";
-         $.each( data, function ( key, val ) {
+         $.each( data, function ( key, val )
+         {
 
-            for ( var i = 0; i < val.length; i++ ) {
+            for ( var i = 0; i < val.length; i++ )
+            {
                var user = val[i];
-
                output += "<li><a id='" + user.id + "' href='#" + user.id + "'>" + "&Tilde;" + user.username + "</a></li>";
             }
-
             $( 'ul#user_list' ).append( output );
          } );
       }
