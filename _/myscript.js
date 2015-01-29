@@ -87,5 +87,5 @@
          e.preventDefault();
       } );
    } );
-}() ); // immediately invoked anonymous function
+}() ); // end immediately invoked anonymous function
 
