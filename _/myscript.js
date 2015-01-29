@@ -1,4 +1,12 @@
-/* @ Stephen O'Connor */
+/* 
+ * myscript.js Business Card List with Pop-up
+ * @ Stephen O'Connor, January 2015
+ * 
+ * Dependencies:
+ * https://developers.google.com/speed/libraries/devguide#jquery
+ * http://tristanedwards.me/sweetalert 
+ * 
+ */
 ( function () {
 
    // jQuery AJAX call
@@ -40,7 +48,8 @@
                        "<li><a id='" +
                        user.id +
                        "' href='#" +
-                       user.id + "'>" +
+                       user.id + 
+                       "'>" +
                        "&Tilde;" +
                        user.username +
                        "</a></li>";
@@ -51,14 +60,14 @@
    } );
 
    //  sort data in ascending and descending order
-   $( document ).ready( function () 
+   $( document ).ready( function ()
    {
-      $( '.link-sort-list' ).click( function ( e ) 
+      $( '.link-sort-list' ).click( function ( e )
       {
          var $sort = this,
                  $list = $( '#user_list' ),
                  $listLi = $( 'li', $list );
-         $listLi.sort( function ( a, b ) 
+         $listLi.sort( function ( a, b )
          {
             var keyA = $( a ).text(),
                     keyB = $( b ).text();
@@ -69,7 +78,7 @@
                return ( keyA < keyB ) ? 1 : 0;
             }
          } );
-         $.each( $listLi, function ( index, row ) 
+         $.each( $listLi, function ( index, row )
          {
             $list.append( row );
          } );
