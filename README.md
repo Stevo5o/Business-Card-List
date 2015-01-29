@@ -1,5 +1,6 @@
 # Business-Card-List
 JS JSON AJAX jQuery sweetalert.js
-A small JS challange using JS jQuery AJAX reading from a JSON file a list of user names.
-On user name select a pop-up displays users details from the JSON file.
-For the pop-up sweetalert.js is used.
+A small JS challange using of course JavaScript, jQuery, AJAX, reading and displaying JSON file data - list of user names with details.
+When user name is selected a pop-up displays that users details stored in the JSON file.
+For the pop-up I used a little JS lib called sweetalert.js
+
