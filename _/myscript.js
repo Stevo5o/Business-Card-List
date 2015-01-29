@@ -1,4 +1,4 @@
-/* 
+/**
  * myscript.js Business Card List with Pop-up
  * @ Stephen O'Connor, January 2015
  * 
@@ -7,6 +7,8 @@
  * http://tristanedwards.me/sweetalert 
  * 
  */
+
+// immediately invoked anonymous function
 ( function () {
 
    // jQuery AJAX call
